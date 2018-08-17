@@ -15,11 +15,16 @@
     "typescript": "^3.0.1",
     "zone.js": "^0.8.26"
   },
+  "scripts": {
+    "build": "./node_modules/webpack/bin/webpack.js --config webpack.config.js",
+    "start": "npm run build && ./node_modules/node-static/bin/cli.js -p 8090 ."
+  },
   "devDependencies": {
     "@types/core-js": "^2.5.0",
     "@types/node": "^10.7.1",
     "awesome-typescript-loader": "^5.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "node-static": "^0.7.10",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0"
   }
